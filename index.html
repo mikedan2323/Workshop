@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathfinder Counsellors Workshop</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="font-sans">
+    <header class="bg-gradient-to-r from-blue-800 to-blue-900 text-white p-4 sticky top-0 z-10 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-compass text-yellow-300 text-2xl mr-3 animate-pulse"></i>
+                <h1 class="text-xl font-bold">Pathfinder Counsellors Workshop</h1>
+            </div>
+            <div class="text-sm bg-blue-700 px-3 py-1 rounded-full shadow-inner">Equipping Leaders for Excellence</div>
+        </div>
+    </header>
+
+    <div class="container mx-auto p-4">
+        <!-- Progress Bar -->
+        <div class="mb-6 bg-gray-200 rounded-full overflow-hidden shadow">
+            <div id="progress-bar" class="progress-bar bg-gradient-to-r from-blue-500 to-blue-700 rounded-full" style="width: 0%"></div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="flex justify-between mb-6">
+            <button id="prev-btn" class="nav-btn px-4 py-2 bg-gray-300 rounded disabled:opacity-50 flex items-center">
+                <i class="fas fa-arrow-left mr-2"></i> Previous
+            </button>
+            <div id="section-indicator" class="px-4 py-2 bg-blue-100 rounded text-center font-medium text-blue-800 shadow-sm">
+                Page 1 of 15
+            </div>
+            <button id="next-btn" class="nav-btn px-4 py-2 btn-primary rounded flex items-center">
+                Next <i class="fas fa-arrow-right ml-2"></i>
+            </button>
+        </div>
+
+        <!-- === All Sections and Quizzes in CORRECT ORDER === -->
+
+        <!-- 1. Welcome Section -->
+        <section id="section-1" class="navigable-item active animate-fade-in">
+            <div class="card bg-white p-6 mb-6">
+                <h2 class="text-2xl font-bold text-blue-900 mb-4 flex items-center">
+                    <i class="fas fa-handshake text-blue-600 mr-3"></i>
+                    Welcome to the Pathfinder Counsellors Workshop
+                </h2>
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 mb-4 md:mb-0 md:pr-4">
+                        <img src="https://i.postimg.cc/Ss9bCKQQ/pathfinder-placeholder.jpg" alt="Pathfinder Workshop" class="w-full rounded shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-xl font-semibold mb-2 text-blue-700">Introduction</h3>
+                        <p class="mb-4 leading-relaxed">Welcome to our Pathfinder Counsellors Workshop! This session is designed to equip you with the knowledge and skills needed to effectively serve as counsellors in our Pathfinder program.</p>
+                        <p class="mb-4 leading-relaxed">As counsellors, you play a crucial role in the spiritual and personal development of our Pathfinders. Today, we'll explore the vision for the year, understand the Pathfinder class structure, and define the various roles and responsibilities.</p>
+                        <div class="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500 shadow-sm">
+                            <p class="font-semibold text-blue-800 mb-2">Workshop Agenda:</p>
+                            <ul class="space-y-1">
+                                <li class="list-item flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i>Welcome and Prayer</li>
+                                <li class="list-item flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i>Vision for the Year</li>
+                                <li class="list-item flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i>Pathfinder Class Structure</li>
+                                <li class="list-item flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i>Role Responsibilities Overview</li>
+                                <li class="list-item flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i>Interactive Role Scenarios</li>
+                                <li class="list-item flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i>Questions & Answers</li>
+                                <li class="list-item flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i>Role Assignments & Closing Prayer</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Vision Section -->
+        <section id="section-2" class="navigable-item">
+            <div class="card bg-white p-6 mb-6">
+                <h2 class="text-2xl font-bold text-blue-900 mb-4 flex items-center">
+                    <i class="fas fa-eye text-blue-600 mr-3"></i>
+                    Vision for the Year
+                </h2>
+                <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-800 p-4 rounded-lg mb-6 shadow-sm">
+                    <h3 class="text-xl font-semibold mb-2 flex items-center">
+                        <i class="fas fa-star text-yellow-600 mr-2"></i>
+                        Theme: "Building Character, Serving Others"
+                    </h3>
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-lg font-semibold mb-3 text-blue-700 flex items-center">
+                        <i class="fas fa-bullseye text-red-500 mr-2"></i>
+                        Key Goals:
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-blue-50 p-4 rounded border border-blue-200 transform hover:scale-105 transition-transform duration-300 shadow-sm">
+                            <div class="flex items-center">
+                                <div class="bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-full w-10 h-10 flex items-center justify-center mr-3 font-bold shadow-md">1</div>
+                                <p>Achieve <span class="font-semibold">90%</span> completion rate for class requirements</p>
+                            </div>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded border border-blue-200 transform hover:scale-105 transition-transform duration-300 shadow-sm">
+                            <div class="flex items-center">
+                                <div class="bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-full w-10 h-10 flex items-center justify-center mr-3 font-bold shadow-md">2</div>
+                                <p>Develop <span class="font-semibold">lifelong skills</span> in every Pathfinder</p>
+                            </div>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded border border-blue-200 transform hover:scale-105 transition-transform duration-300 shadow-sm">
+                            <div class="flex items-center">
+                                <div class="bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-full w-10 h-10 flex items-center justify-center mr-3 font-bold shadow-md">3</div>
+                                <p>Create a supportive, <span class="font-semibold">Christ-centered</span> environment</p>
+                            </div>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded border border-blue-200 transform hover:scale-105 transition-transform duration-300 shadow-sm">
+                            <div class="flex items-center">
+                                <div class="bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-full w-10 h-10 flex items-center justify-center mr-3 font-bold shadow-md">4</div>
+                                <p>Build a <span class="font-semibold">strong foundation</span> for the future</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-green-50 border-l-4 border-green-500 text-green-800 p-4 rounded-lg shadow-sm">
+                    <p class="italic flex items-start">
+                        <i class="fas fa-quote-left text-green-400 mr-2 text-xl"></i>
+                        "As counsellors, we are not just teaching skills, but shaping characters for eternity. Our goal is to inspire young people to develop a personal relationship with Christ and to serve others selflessly."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Quiz 1 -->
+        <section id="quiz-1" class="navigable-item">
+            <div class="card bg-white p-6 mb-6">
+                <h2 class="text-2xl font-bold text-blue-900 mb-4 flex items-center">
+                    <i class="fas fa-question-circle text-blue-600 mr-3"></i>
+                    Quick Check: Vision & Goals
+                </h2>
+                <form id="quiz-form-1" class="space-y-4">
+                    <div class="quiz-question mb-4 p-4 border rounded border-gray-200 hover:border-blue-300 transition-colors duration-200 shadow-sm">
+                        <p class="font-semibold mb-2 flex items-center">
+                            <span class="bg-blue-600 text-white rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 shadow-sm">1</span>
+                            What is our theme for this year?
+                        </p>
+                        <div class="space-y-2 ml-8">
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q1" id="q1a" value="a" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q1a">Growing in Faith, Leading by Example</label>
+                            </div>
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q1" id="q1b" value="b" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q1b">Building Character, Serving Others</label>
+                            </div>
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q1" id="q1c" value="c" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q1c">Adventure, Discovery, Service</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz-question mb-4 p-4 border rounded border-gray-200 hover:border-blue-300 transition-colors duration-200 shadow-sm">
+                        <p class="font-semibold mb-2 flex items-center">
+                            <span class="bg-blue-600 text-white rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 shadow-sm">2</span>
+                            What completion rate are we aiming for with class requirements?
+                        </p>
+                        <div class="space-y-2 ml-8">
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q2" id="q2a" value="a" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q2a">75%</label>
+                            </div>
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q2" id="q2b" value="b" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q2b">85%</label>
+                            </div>
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q2" id="q2c" value="c" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q2c">90%</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <button type="submit" class="px-6 py-2 btn-primary rounded shadow-md hover:shadow-lg transition-shadow duration-300 flex items-center justify-center w-full sm:w-auto">
+                            <i class="fas fa-check-circle mr-2"></i> Submit Answers
+                        </button>
+                    </div>
+                </form>
+                <div id="quiz-result-1" class="mt-4 p-4 border rounded hidden"></div>
+            </div>
+        </section>
+
+        <!-- 4. Class Structure Section -->
+        <section id="section-3" class="navigable-item">
+            <div class="card bg-white p-6 mb-6">
+                <h2 class="text-2xl font-bold text-blue-900 mb-4 flex items-center">
+                    <i class="fas fa-layer-group text-blue-600 mr-3"></i>
+                    Pathfinder Class Structure
+                </h2>
+                <div class="mb-6">
+                    <h3 class="text-lg font-semibold mb-2 text-blue-700 flex items-center">
+                        <i class="fas fa-th-list text-blue-500 mr-2"></i>
+                        Overview of Classes:
+                    </h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        <div class="class-card bg-blue-50">
+                            <h4 class="font-semibold">Friend</h4>
+                            <p class="text-sm">9–11 years</p>
+                            <div class="ribbon"></div>
+                        </div>
+                        <div class="class-card bg-red-50">
+                            <h4 class="font-semibold">Companion</h4>
+                            <p class="text-sm">11–12 years</p>
+                            <div class="ribbon"></div>
+                        </div>
+                        <div class="class-card bg-green-50">
+                            <h4 class="font-semibold">Explorer</h4>
+                            <p class="text-sm">12–13 years</p>
+                            <div class="ribbon"></div>
+                        </div>
+                        <div class="class-card bg-white-50">
+                            <h4 class="font-semibold">Ranger</h4>
+                            <p class="text-sm">13–14 years</p>
+                            <div class="ribbon"></div>
+                        </div>
+                        <div class="class-card bg-indigo-50">
+                            <h4 class="font-semibold">Voyager</h4>
+                            <p class="text-sm">14–15 years</p>
+                            <div class="ribbon"></div>
+                        </div>
+                        <div class="class-card bg-yellow-50">
+                            <h4 class="font-semibold">Guide</h4>
+                            <p class="text-sm">15–16 years</p>
+                            <div class="ribbon"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-lg font-semibold mb-2 text-blue-700 flex items-center">
+                        <i class="fas fa-book-open text-blue-500 mr-2"></i>
+                        Curriculum Components for Each Level:
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div class="curriculum-component"><h4 class="font-semibold">1. Spiritual Discovery</h4></div>
+                        <div class="curriculum-component"><h4 class="font-semibold">2. Serving Others</h4></div>
+                        <div class="curriculum-component"><h4 class="font-semibold">3. Nature Study</h4></div>
+                        <div class="curriculum-component"><h4 class="font-semibold">4. Friendship Development</h4></div>
+                        <div class="curriculum-component"><h4 class="font-semibold">5. Health & Fitness</h4></div>
+                        <div class="curriculum-component"><h4 class="font-semibold">6. Personal Growth</h4></div>
+                        <div class="curriculum-component"><h4 class="font-semibold">7. Honours & Skills</h4></div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h3 class="text-lg font-semibold mb-2 text-blue-700 flex items-center">
+                        <i class="fas fa-users-cog text-blue-500 mr-2"></i>
+                        Recommended 3-Counselor System:
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="counselor-card bg-yellow-100 border-yellow-300">
+                            <div class="counselor-icon bg-yellow-200">
+                                <i class="fas fa-book text-yellow-700"></i>
+                            </div>
+                            <h4 class="font-semibold text-center mb-2">Curriculum Specialist</h4>
+                            <ul class="list-disc pl-5 text-sm space-y-1">
+                                <li>Focuses on book requirements</li>
+                                <li>Manages reading/journaling activities</li>
+                                <li>Tracks individual progress</li>
+                            </ul>
+                        </div>
+                        <div class="counselor-card bg-green-100 border-green-300">
+                            <div class="counselor-icon bg-green-200">
+                                <i class="fas fa-hiking text-green-700"></i>
+                            </div>
+                            <h4 class="font-semibold text-center mb-2">Activities Coordinator</h4>
+                            <ul class="list-disc pl-5 text-sm space-y-1">
+                                <li>Leads group projects</li>
+                                <li>Organizes field activities</li>
+                                <li>Facilitates team-building exercises</li>
+                            </ul>
+                        </div>
+                        <div class="counselor-card bg-blue-100 border-blue-300">
+                            <div class="counselor-icon bg-blue-200">
+                                <i class="fas fa-award text-blue-700"></i>
+                            </div>
+                            <h4 class="font-semibold text-center mb-2">Advanced Requirements Coach</h4>
+                            <ul class="list-disc pl-5 text-sm space-y-1">
+                                <li>Supervises honour completion</li>
+                                <li>Guides advanced skill development</li>
+                                <li>Assists with specialized projects</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Quiz 2 -->
+        <section id="quiz-2" class="navigable-item">
+            <div class="card bg-white p-6 mb-6">
+                <h2 class="text-2xl font-bold text-blue-900 mb-4 flex items-center">
+                    <i class="fas fa-question-circle text-blue-600 mr-3"></i>
+                    Quick Check: Class Structure
+                </h2>
+                <form id="quiz-form-2" class="space-y-4">
+                    <div class="quiz-question mb-4 p-4 border rounded border-gray-200 hover:border-blue-300 transition-colors duration-200 shadow-sm">
+                        <p class="font-semibold mb-2 flex items-center">
+                            <span class="bg-blue-600 text-white rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 shadow-sm">1</span>
+                            Which age group corresponds to the Explorer class?
+                        </p>
+                        <div class="space-y-2 ml-8">
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q1" id="q2-1a" value="a" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q2-1a">9-11 years</label>
+                            </div>
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q1" id="q2-1b" value="b" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q2-1b">11-12 years</label>
+                            </div>
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q1" id="q2-1c" value="c" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q2-1c">12-13 years</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz-question mb-4 p-4 border rounded border-gray-200 hover:border-blue-300 transition-colors duration-200 shadow-sm">
+                        <p class="font-semibold mb-2 flex items-center">
+                            <span class="bg-blue-600 text-white rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 shadow-sm">2</span>
+                            Which of these is NOT a curriculum component for Pathfinder classes?
+                        </p>
+                        <div class="space-y-2 ml-8">
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q2" id="q2-2a" value="a" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q2-2a">Nature Study</label>
+                            </div>
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q2" id="q2-2b" value="b" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q2-2b">Computer Programming</label>
+                            </div>
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q2" id="q2-2c" value="c" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q2-2c">Health & Fitness</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz-question mb-4 p-4 border rounded border-gray-200 hover:border-blue-300 transition-colors duration-200 shadow-sm">
+                        <p class="font-semibold mb-2 flex items-center">
+                            <span class="bg-blue-600 text-white rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 shadow-sm">3</span>
+                            In the 3-Counselor System, who is responsible for supervising honour completion?
+                        </p>
+                        <div class="space-y-2 ml-8">
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q3" id="q2-3a" value="a" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q2-3a">Curriculum Specialist</label>
+                            </div>
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q3" id="q2-3b" value="b" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q2-3b">Activities Coordinator</label>
+                            </div>
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q3" id="q2-3c" value="c" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q2-3c">Advanced Requirements Coach</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <button type="submit" class="px-6 py-2 btn-primary rounded shadow-md hover:shadow-lg transition-shadow duration-300 flex items-center justify-center w-full sm:w-auto">
+                            <i class="fas fa-check-circle mr-2"></i> Submit Answers
+                        </button>
+                    </div>
+                </form>
+                <div id="quiz-result-2" class="mt-4 p-4 border rounded hidden"></div>
+            </div>
+        </section>
+
+        <!-- 6. Administrative Roles Section -->
+        <section id="section-4" class="navigable-item">
+            <div class="card bg-white p-6 mb-6">
+                <h2 class="text-2xl font-bold text-blue-900 mb-4 flex items-center">
+                    <i class="fas fa-clipboard-list text-blue-600 mr-3"></i>
+                    Administrative Roles
+                </h2>
+
+                <!-- Attendance Tracking -->
+                <div class="mb-6 role-card">
+                    <h3 class="role-header bg-blue-100 text-blue-800">
+                        <i class="fas fa-user-check text-blue-600 mr-2"></i>
+                        Attendance Tracking
+                    </h3>
+                    <div class="p-4">
+                        <div class="mb-4">
+                            <h4 class="font-semibold mb-1 text-blue-700">Responsibilities:</h4>
+                            <ul class="list-disc pl-5 text-sm space-y-1">
+                                <li>Take weekly attendance using digital system</li>
+                                <li>Follow up with absent Pathfinders within 48 hours</li>
+                                <li>Provide monthly attendance reports</li>
+                                <li>Identify patterns requiring intervention</li>
+                                <li>Coordinate with parents on attendance issues</li>
+                            </ul>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="font-semibold mb-1 text-blue-700">Purpose:</h4>
+                            <ul class="list-disc pl-5 text-sm space-y-1">
+                                <li>Encourages pathfinders to come to every meeting (poor attendance = no awards/trips/etc.)</li>
+                                <li>Figures out how we can schedule meetings to best accommodate the parents</li>
+                            </ul>
+                        </div>
+                        <div class="tracker-link-container">
+                            <a href="#" class="tracker-link text-blue-600" id="attendance-tracker-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt mr-2"></i>
+                                Access Attendance Tracker
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Point System Management -->
+                <div class="mb-6 role-card">
+                    <h3 class="role-header bg-green-100 text-green-800">
+                        <i class="fas fa-star text-green-600 mr-2"></i>
+                        Point System Management
+                    </h3>
+                    <div class="p-4">
+                        <div class="mb-4">
+                            <h4 class="font-semibold mb-1 text-green-700">Responsibilities:</h4>
+                            <ul class="list-disc pl-5 text-sm space-y-1">
+                                <li>Tracking team performance metrics</li>
+                                <li>Weekly updates of standings</li>
+                                <li>End-of-year awards preparation</li>
+                            </ul>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="font-semibold mb-1 text-green-700">Purpose:</h4>
+                            <ul class="list-disc pl-5 text-sm space-y-1">
+                                <li>Encourages pathfinders to come with a positive attitude and bring maximum effort</li>
+                                <li>Builds team work skills</li>
+                            </ul>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="font-semibold mb-1 text-green-700">Tracking Categories (Recommended):</h4>
+                            <ul class="list-disc pl-5 text-sm space-y-1">
+                                <li>Attendance & Punctuality (15 pts/week)</li>
+                                <li>Uniform Compliance (10 pts/week)</li>
+                                <li>Participation (15 pts/week)</li>
+                                <li>Special Events (25-50 pts/event)</li>
+                                <li>Extra Service (5-20 pts/activity)</li>
+                            </ul>
+                        </div>
+                        <div class="tracker-link-container">
+                            <a href="#" class="tracker-link text-green-600" id="point-system-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-medal mr-2"></i>
+                                Access Point System Tracker
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Late Fee Tracking -->
+                <div class="mb-6 role-card">
+                    <h3 class="role-header bg-red-100 text-red-800">
+                        <i class="fas fa-clock text-red-600 mr-2"></i>
+                        Late Fee Tracking/Collection
+                    </h3>
+                    <div class="p-4">
+                        <div class="mb-4">
+                            <h4 class="font-semibold mb-1 text-red-700">Responsibilities:</h4>
+                            <ul class="list-disc pl-5 text-sm space-y-1">
+                                <li>Process for collecting fees</li>
+                                <li>Documentation procedures</li>
+                                <li>Identifying patterns to provide support</li>
+                            </ul>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="font-semibold mb-1 text-red-700">Purpose:</h4>
+                            <ul class="list-disc pl-5 text-sm space-y-1">
+                                <li>Encourages parent of pathfinder to bring their child on time</li>
+                                <li>Identifies why the child is late — ask parents if we can help</li>
+                            </ul>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="font-semibold mb-1 text-red-700">Documentation procedure:</h4>
+                            <ul class="list-disc pl-5 text-sm space-y-1">
+                                <li>Record name, date, and amount</li>
+                            </ul>
+                        </div>
+                        <div class="tracker-link-container">
+                            <a href="#" class="tracker-link text-red-600" id="late-fee-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-money-bill-wave mr-2"></i>
+                                Access Late Fee Tracker
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Quiz 3 -->
+        <section id="quiz-3" class="navigable-item">
+            <div class="card bg-white p-6 mb-6">
+                <h2 class="text-2xl font-bold text-blue-900 mb-4 flex items-center">
+                    <i class="fas fa-question-circle text-blue-600 mr-3"></i>
+                    Quick Check: Administrative Roles
+                </h2>
+                <form id="quiz-form-3" class="space-y-4">
+                    <div class="quiz-question mb-4 p-4 border rounded border-gray-200 hover:border-blue-300 transition-colors duration-200 shadow-sm">
+                        <p class="font-semibold mb-2 flex items-center">
+                            <span class="bg-blue-600 text-white rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 shadow-sm">1</span>
+                            How soon should you follow up with absent Pathfinders?
+                        </p>
+                        <div class="space-y-2 ml-8">
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q1" id="q3-1a" value="a" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q3-1a">24 hours</label>
+                            </div>
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q1" id="q3-1b" value="b" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q3-1b">48 hours</label>
+                            </div>
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q1" id="q3-1c" value="c" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q3-1c">1 week</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz-question mb-4 p-4 border rounded border-gray-200 hover:border-blue-300 transition-colors duration-200 shadow-sm">
+                        <p class="font-semibold mb-2 flex items-center">
+                            <span class="bg-blue-600 text-white rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 shadow-sm">2</span>
+                            How many points are awarded for Uniform Compliance per week?
+                        </p>
+                        <div class="space-y-2 ml-8">
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q2" id="q3-2a" value="a" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q3-2a">5 points</label>
+                            </div>
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q2" id="q3-2b" value="b" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q3-2b">10 points</label>
+                            </div>
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q2" id="q3-2c" value="c" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q3-2c">15 points</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz-question mb-4 p-4 border rounded border-gray-200 hover:border-blue-300 transition-colors duration-200 shadow-sm">
+                        <p class="font-semibold mb-2 flex items-center">
+                            <span class="bg-blue-600 text-white rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 shadow-sm">3</span>
+                            What is one key purpose of the Late Fee Tracking system?
+                        </p>
+                        <div class="space-y-2 ml-8">
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q3" id="q3-3a" value="a" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q3-3a">To raise money for the club</label>
+                            </div>
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q3" id="q3-3b" value="b" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q3-3b">To identify why children are late and provide help if needed</label>
+                            </div>
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q3" id="q3-3c" value="c" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q3-3c">To punish parents who are late</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <button type="submit" class="px-6 py-2 btn-primary rounded shadow-md hover:shadow-lg transition-shadow duration-300 flex items-center justify-center w-full sm:w-auto">
+                            <i class="fas fa-check-circle mr-2"></i> Submit Answers
+                        </button>
+                    </div>
+                </form>
+                <div id="quiz-result-3" class="mt-4 p-4 border rounded hidden"></div>
+            </div>
+        </section>
+
+        <!-- 8. Uniform & Equipment Roles Section -->
+        <section id="section-5" class="navigable-item">
+            <div class="card bg-white p-6 mb-6">
+                <h2 class="text-2xl font-bold text-blue-900 mb-4 flex items-center">
+                    <i class="fas fa-tshirt text-blue-600 mr-3"></i>
+                    Uniform & Equipment Roles
+                </h2>
+
+                <div class="mb-6 role-card">
+                    <h3 class="role-header bg-green-100 text-green-800">
+                        <i class="fas fa-ruler text-green-600 mr-2"></i>
+                        Type A Uniforms & Inventory
+                    </h3>
+                    <div class="p-4">
+                        <div class="flex flex-col md:flex-row">
+                            <div class="md:w-2/3 mb-4 md:mb-0 md:pr-4">
+                                <h4 class="font-semibold mb-1 text-green-700">Responsibilities:</h4>
+                                <p class="mb-3 text-sm">Maintain accurate inventory of:</p>
+                                <ul class="list-disc pl-5 mb-4 text-sm space-y-1">
+                                    <li>Uniforms and parts</li>
+                                    <li>Honour sashes and patches</li>
+                                    <li>Club equipment and supplies</li>
+                                </ul>
+
+                                <h4 class="font-semibold mb-1 text-green-700">Additional Duties:</h4>
+                                <ul class="list-disc pl-5 text-sm space-y-1">
+                                    <li>Process uniform orders promptly</li>
+                                    <li>Assist families with financial constraints</li>
+                                    <li>Ensure proper uniform care and maintenance</li>
+                                    <li>Coordinate with conference for special needs</li>
+                                </ul>
+                            </div>
+                            <div class="md:w-1/3">
+                                <div class="bg-green-50 p-4 rounded h-full border border-green-200 shadow-sm">
+                                    <h4 class="font-semibold mb-2 text-green-700 flex items-center">
+                                        <i class="fas fa-bullseye text-green-500 mr-2"></i>
+                                        Purpose:
+                                    </h4>
+                                    <ul class="list-disc pl-5 text-sm space-y-1">
+                                        <li>Keep track of our inventory + order items w/ low stock</li>
+                                        <li>Ensure Pathfinder uniforms are complete and presentable</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Specialty Training Roles Section -->
+        <section id="section-6" class="navigable-item">
+            <div class="card bg-white p-6 mb-6">
+                <h2 class="text-2xl font-bold text-blue-900 mb-4 flex items-center">
+                    <i class="fas fa-graduation-cap text-blue-600 mr-3"></i>
+                    Specialty Training Roles
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Drum Squad Leadership -->
+                    <div class="specialty-card">
+                        <div class="specialty-header bg-yellow-100">
+                            <i class="fas fa-drum text-yellow-700"></i>
+                            <h3>Drum Squad Leadership</h3>
+                        </div>
+                        <div class="p-4 flex-grow">
+                            <div class="mb-4">
+                                <h4 class="font-semibold mb-1 text-yellow-700">Responsibilities:</h4>
+                                <ul class="list-disc pl-5 text-sm space-y-1">
+                                    <li>Develop practice schedule</li>
+                                    <li>Equipment maintenance protocols</li>
+                                    <li>Performance preparation checklists</li>
+                                    <li>Coordinate with Drill Squad for combined displays</li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-4">
+                                <h4 class="font-semibold mb-1 text-yellow-700">Progressive Skill Development:</h4>
+                                <ul class="list-disc pl-5 text-sm space-y-1">
+                                    <li>Basic rhythm and timing</li>
+                                    <li>Standard drum patterns</li>
+                                    <li>Advanced techniques</li>
+                                    <li>Performance formations</li>
+                                </ul>
+                            </div>
+                            <div class="specialty-purpose">
+                                <h4 class="font-semibold mb-1 text-yellow-700">Purpose:</h4>
+                                <p class="text-sm">To make our drum squad the best in North America</p>
+                                <p class="text-sm">Create a winning mindset</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Drill Squad Leadership -->
+                    <div class="specialty-card">
+                        <div class="specialty-header bg-red-100">
+                            <i class="fas fa-users text-red-700"></i>
+                            <h3>Drill Squad Leadership</h3>
+                        </div>
+                        <div class="p-4 flex-grow">
+                            <div class="mb-4">
+                                <h4 class="font-semibold mb-1 text-red-700">Responsibilities:</h4>
+                                <ul class="list-disc pl-5 text-sm space-y-1">
+                                    <li>Weekly practice (depending on time available)</li>
+                                    <li>Performance evaluation standards</li>
+                                    <li>Safety guidelines</li>
+                                    <li>Integration with club ceremonies</li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-4">
+                                <h4 class="font-semibold mb-1 text-red-700">Teaching Progression:</h4>
+                                <ol class="list-decimal pl-5 text-sm space-y-1">
+                                    <li>Basic commands and positions</li>
+                                    <li>Formation movements</li>
+                                    <li>Precision marching</li>
+                                    <li>Formal inspection procedures</li>
+                                </ol>
+                            </div>
+                            <div class="specialty-purpose">
+                                <h4 class="font-semibold mb-1 text-red-700">Purpose:</h4>
+                                <p class="text-sm">Create a disciplined team who can effectively follow all instructions</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fancy Squad Coordination -->
+                    <div class="specialty-card">
+                        <div class="specialty-header bg-purple-100">
+                            <i class="fas fa-flag text-purple-700"></i>
+                            <h3>Fancy Squad Coordination</h3>
+                        </div>
+                        <div class="p-4 flex-grow">
+                            <div class="mb-4">
+                                <h4 class="font-semibold mb-1 text-purple-700">Responsibilities:</h4>
+                                <ul class="list-disc pl-5 text-sm space-y-1">
+                                    <li>Advanced technique development</li>
+                                    <li>Special event preparation (4 weeks minimum)</li>
+                                    <li>Represent club at conference events</li>
+                                    <li>Mentorship</li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-4">
+                                <h4 class="font-semibold mb-1 text-purple-700">Selection Criteria:</h4>
+                                <ul class="list-disc pl-5 text-sm space-y-1">
+                                    <li>Previous drill experience</li>
+                                    <li>Demonstrated discipline</li>
+                                    <li>Commitment to extra practice</li>
+                                    <li>Leadership potential</li>
+                                </ul>
+                            </div>
+                            <div class="specialty-purpose">
+                                <h4 class="font-semibold mb-1 text-purple-700">Purpose:</h4>
+                                <p class="text-sm">To make our fancy squad the best in North America</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. Quiz 4 -->
+        <section id="quiz-4" class="navigable-item">
+            <div class="card bg-white p-6 mb-6">
+                <h2 class="text-2xl font-bold text-blue-900 mb-4 flex items-center">
+                    <i class="fas fa-question-circle text-blue-600 mr-3"></i>
+                    Quick Check: Specialty Training Roles
+                </h2>
+                <form id="quiz-form-4" class="space-y-4">
+                    <div class="quiz-question mb-4 p-4 border rounded border-gray-200 hover:border-blue-300 transition-colors duration-200 shadow-sm">
+                        <p class="font-semibold mb-2 flex items-center">
+                            <span class="bg-blue-600 text-white rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 shadow-sm">1</span>
+                            How many weeks minimum are needed for Fancy Squad special event preparation?
+                        </p>
+                        <div class="space-y-2 ml-8">
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q1" id="q4-1a" value="a" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q4-1a">2 weeks</label>
+                            </div>
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q1" id="q4-1b" value="b" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q4-1b">4 weeks</label>
+                            </div>
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q1" id="q4-1c" value="c" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q4-1c">6 weeks</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz-question mb-4 p-4 border rounded border-gray-200 hover:border-blue-300 transition-colors duration-200 shadow-sm">
+                        <p class="font-semibold mb-2 flex items-center">
+                            <span class="bg-blue-600 text-white rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 shadow-sm">2</span>
+                            What is the purpose of the Drill Squad according to our workshop?
+                        </p>
+                        <div class="space-y-2 ml-8">
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q2" id="q4-2a" value="a" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q4-2a">To be the best in North America</label>
+                            </div>
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q2" id="q4-2b" value="b" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q4-2b">To win competitions</label>
+                            </div>
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q2" id="q4-2c" value="c" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q4-2c">Create a disciplined team who can effectively follow all instructions</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <button type="submit" class="px-6 py-2 btn-primary rounded shadow-md hover:shadow-lg transition-shadow duration-300 flex items-center justify-center w-full sm:w-auto">
+                            <i class="fas fa-check-circle mr-2"></i> Submit Answers
+                        </button>
+                    </div>
+                </form>
+                <div id="quiz-result-4" class="mt-4 p-4 border rounded hidden"></div>
+            </div>
+        </section>
+
+        <!-- 11. Program Development Roles Section -->
+        <section id="section-7" class="navigable-item">
+            <div class="card bg-white p-6 mb-6">
+                <h2 class="text-2xl font-bold text-blue-900 mb-4 flex items-center">
+                    <i class="fas fa-project-diagram text-blue-600 mr-3"></i>
+                    Program Development Roles
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Honour Instruction -->
+                    <div class="development-card">
+                        <div class="development-header bg-indigo-100">
+                            <i class="fas fa-certificate text-indigo-700"></i>
+                            <h3>Honour Instruction</h3>
+                        </div>
+                        <div class="p-4 flex-grow">
+                            <div class="mb-4">
+                                <h4 class="font-semibold mb-1 text-indigo-700">Selection Criteria:</h4>
+                                <ul class="list-disc pl-5 text-sm space-y-1">
+                                    <li>Pathfinder interests</li>
+                                    <li>Available resources</li>
+                                    <li>Curriculum alignment</li>
+                                    <li>Season appropriateness</li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-4">
+                                <h4 class="font-semibold mb-1 text-indigo-700">Responsibilities:</h4>
+                                <ul class="list-disc pl-5 text-sm space-y-1">
+                                    <li>Teaching methods to accommodate different learning styles</li>
+                                    <li>Documentation and verification procedures</li>
+                                    <li>Honour day planning (quarterly)</li>
+                                    <li>Resource management and preparation</li>
+                                </ul>
+                            </div>
+
+                            <div class="development-purpose">
+                                <h4 class="font-semibold mb-1 text-indigo-700">Purpose:</h4>
+                                <ul class="list-disc pl-5 text-sm space-y-1">
+                                    <li>Lifelong skills that will serve them in the real world</li>
+                                    <li>Visually represent achievements (colourful sashes)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Event Planning & Logistics -->
+                    <div class="development-card">
+                        <div class="development-header bg-teal-100">
+                            <i class="fas fa-calendar-check text-teal-700"></i>
+                            <h3>Event Planning & Logistics</h3>
+                        </div>
+                        <div class="p-4 flex-grow">
+                            <div class="mb-4">
+                                <h4 class="font-semibold mb-1 text-teal-700">Trip Planning Timeline:</h4>
+                                <p class="font-medium text-red-600 text-sm flex items-center">
+                                    <i class="fas fa-exclamation-circle mr-1"></i>
+                                    Minimum 6 weeks advance
+                                </p>
+                            </div>
+
+                            <div class="mb-4">
+                                <h4 class="font-semibold mb-1 text-teal-700">Risk Management Procedures:</h4>
+                                <ul class="list-disc pl-5 text-sm space-y-1">
+                                    <li>Permission forms</li>
+                                    <li>Medical information</li>
+                                    <li>Transportation safety</li>
+                                    <li>Emergency protocols</li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-4">
+                                <h4 class="font-semibold mb-1 text-teal-700">Other Responsibilities:</h4>
+                                <ul class="list-disc pl-5 text-sm space-y-1">
+                                    <li>Budget development and tracking</li>
+                                    <li>Venue coordination</li>
+                                    <li>Equipment checklists</li>
+                                    <li>Parent communication strategy</li>
+                                </ul>
+                            </div>
+
+                            <div class="development-purpose">
+                                <h4 class="font-semibold mb-1 text-teal-700">Purpose:</h4>
+                                <p class="text-sm">Create safe, engaging, and memorable experiences for the Pathfinders</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 12. Communication Roles Section -->
+        <section id="section-8" class="navigable-item">
+            <div class="card bg-white p-6 mb-6">
+                <h2 class="text-2xl font-bold text-blue-900 mb-4 flex items-center">
+                    <i class="fas fa-comment-dots text-blue-600 mr-3"></i>
+                    Communication Roles
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Calendar & Social Media -->
+                    <div class="comm-card">
+                        <div class="comm-header bg-pink-100">
+                            <i class="fas fa-share-alt text-pink-700"></i>
+                            <h3>Calendar & Social Media</h3>
+                        </div>
+                        <div class="p-4 flex-grow">
+                            <div class="mb-4">
+                                <h4 class="font-semibold mb-1 text-pink-700">Responsibilities:</h4>
+                                <ul class="list-disc pl-5 text-sm space-y-1">
+                                    <li>Maintain master calendar (digital & physical)</li>
+                                    <li>Event promotion (2 weeks minimum lead time)</li>
+                                    <li>Platform management (Website, Facebook, etc.)</li>
+                                    <li>Create and share engaging social media posts (with appropriate permissions)</li>
+                                </ul>
+                            </div>
+
+                            <div class="comm-purpose">
+                                <h4 class="font-semibold mb-1 text-pink-700">Purpose:</h4>
+                                <p class="text-sm">Showcase the positive "Fa Nyame" experience to the community and keep everyone informed</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Parent Updates -->
+                    <div class="comm-card">
+                        <div class="comm-header bg-orange-100">
+                            <i class="fas fa-envelope text-orange-700"></i>
+                            <h3>Parent Updates</h3>
+                        </div>
+                        <div class="p-4 flex-grow">
+                            <div class="mb-4">
+                                <h4 class="font-semibold mb-1 text-orange-700">Content Guidelines:</h4>
+                                <ul class="list-disc pl-5 text-sm space-y-1">
+                                    <li>Upcoming events & deadlines</li>
+                                    <li>Required materials or preparations</li>
+                                    <li>Achievement recognition & progress</li>
+                                    <li>Curriculum highlights</li>
+                                    <li>Volunteer needs</li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-4">
+                                <h4 class="font-semibold mb-1 text-orange-700">Other Responsibilities:</h4>
+                                <ul class="list-disc pl-5 text-sm space-y-1">
+                                    <li>Maintain parent contact list</li>
+                                    <li>Weekly communication schedule (e.g., Friday email)</li>
+                                    <li>Manage emergency notification system</li>
+                                    <li>Develop new family onboarding communication</li>
+                                </ul>
+                            </div>
+
+                            <div class="comm-purpose">
+                                <h4 class="font-semibold mb-1 text-orange-700">Purpose:</h4>
+                                <p class="text-sm">Keep parents informed, engaged, and partnered in the Pathfinder experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 13. Quiz 5 -->
+        <section id="quiz-5" class="navigable-item">
+            <div class="card bg-white p-6 mb-6">
+                <h2 class="text-2xl font-bold text-blue-900 mb-4 flex items-center">
+                    <i class="fas fa-question-circle text-blue-600 mr-3"></i>
+                    Quick Check: Program Development & Communication
+                </h2>
+                <form id="quiz-form-5" class="space-y-4">
+                    <div class="quiz-question mb-4 p-4 border rounded border-gray-200 hover:border-blue-300 transition-colors duration-200 shadow-sm">
+                        <p class="font-semibold mb-2 flex items-center">
+                            <span class="bg-blue-600 text-white rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 shadow-sm">1</span>
+                            How far in advance should trip planning begin?
+                        </p>
+                        <div class="space-y-2 ml-8">
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q1" id="q5-1a" value="a" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q5-1a">4 weeks</label>
+                            </div>
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q1" id="q5-1b" value="b" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q5-1b">6 weeks</label>
+                            </div>
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q1" id="q5-1c" value="c" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q5-1c">8 weeks</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz-question mb-4 p-4 border rounded border-gray-200 hover:border-blue-300 transition-colors duration-200 shadow-sm">
+                        <p class="font-semibold mb-2 flex items-center">
+                            <span class="bg-blue-600 text-white rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 shadow-sm">2</span>
+                            How far in advance should events be promoted?
+                        </p>
+                        <div class="space-y-2 ml-8">
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q2" id="q5-2a" value="a" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q5-2a">1 week</label>
+                            </div>
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q2" id="q5-2b" value="b" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q5-2b">2 weeks</label>
+                            </div>
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q2" id="q5-2c" value="c" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q5-2c">3 weeks</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz-question mb-4 p-4 border rounded border-gray-200 hover:border-blue-300 transition-colors duration-200 shadow-sm">
+                        <p class="font-semibold mb-2 flex items-center">
+                            <span class="bg-blue-600 text-white rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 shadow-sm">3</span>
+                            How often should Honour Day be planned?
+                        </p>
+                        <div class="space-y-2 ml-8">
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q3" id="q5-3a" value="a" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q5-3a">Monthly</label>
+                            </div>
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q3" id="q5-3b" value="b" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q5-3b">Quarterly</label>
+                            </div>
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q3" id="q5-3c" value="c" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q5-3c">Annually</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <button type="submit" class="px-6 py-2 btn-primary rounded shadow-md hover:shadow-lg transition-shadow duration-300 flex items-center justify-center w-full sm:w-auto">
+                            <i class="fas fa-check-circle mr-2"></i> Submit Answers
+                        </button>
+                    </div>
+                </form>
+                <div id="quiz-result-5" class="mt-4 p-4 border rounded hidden"></div>
+            </div>
+        </section>
+
+        <!-- 14. Counsellor Best Practices -->
+        <section id="section-9" class="navigable-item">
+            <div class="card bg-white p-6 mb-6">
+                <h2 class="text-2xl font-bold text-blue-900 mb-4 flex items-center">
+                    <i class="fas fa-star text-blue-600 mr-3"></i>
+                    Counsellor Best Practices
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                    <!-- Spiritual Leadership -->
+                    <div class="practices-card">
+                        <div class="practices-header bg-purple-100">
+                            <i class="fas fa-pray text-purple-700"></i>
+                            <h3>Spiritual Leadership</h3>
+                        </div>
+                        <div class="p-4 flex-grow">
+                            <ul class="list-disc pl-5 text-sm space-y-2">
+                                <li>Model Christian values in all interactions</li>
+                                <li>Begin activities with prayer</li>
+                                <li>Share personal testimonies when appropriate</li>
+                                <li>Connect Pathfinder activities to biblical principles</li>
+                                <li>Encourage spiritual growth & discussion</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Effective Communication -->
+                    <div class="practices-card">
+                        <div class="practices-header bg-blue-100">
+                            <i class="fas fa-comments text-blue-700"></i>
+                            <h3>Effective Communication</h3>
+                        </div>
+                        <div class="p-4 flex-grow">
+                            <ul class="list-disc pl-5 text-sm space-y-2">
+                                <li>Provide clear, concise, and consistent instructions</li>
+                                <li>Practice active listening with Pathfinders & parents</li>
+                                <li>Use age-appropriate language</li>
+                                <li>Offer regular, constructive feedback</li>
+                                <li>Maintain open communication with fellow leaders</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Safety Consciousness -->
+                    <div class="practices-card">
+                        <div class="practices-header bg-red-100">
+                            <i class="fas fa-shield-alt text-red-700"></i>
+                            <h3>Safety Consciousness</h3>
+                        </div>
+                        <div class="p-4 flex-grow">
+                            <ul class="list-disc pl-5 text-sm space-y-2">
+                                <li>Always maintain proper supervision ratios</li>
+                                <li>Know and follow emergency procedures</li>
+                                <li>Conduct risk assessments for activities</li>
+                                <li>Practice preventative measures (first aid ready, etc.)</li>
+                                <li>Model safe behavior in all situations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Role Scenarios -->
+                <div class="mt-8">
+                    <h3 class="text-xl font-semibold text-blue-900 mb-4 flex items-center">
+                        <i class="fas fa-theater-masks text-blue-600 mr-2"></i>
+                        Interactive Session: Role Scenarios
+                    </h3>
+                    <p class="mb-4 text-gray-700">During our workshop, we'll break into small groups to work through the following role-specific challenges:</p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="scenario-card">
+                            <div class="scenario-number"><span>1</span></div>
+                            <h4 class="font-semibold mb-2 text-gray-800">Uniform Issue</h4>
+                            <p class="text-sm text-gray-600">A Pathfinder consistently arrives without proper uniform components. How would you address this while being supportive and understanding potential barriers?</p>
+                        </div>
+                        <div class="scenario-card">
+                            <div class="scenario-number"><span>2</span></div>
+                            <h4 class="font-semibold mb-2 text-gray-800">Disengagement</h4>
+                            <p class="text-sm text-gray-600">You notice a Pathfinder seems withdrawn and uninterested in activities they usually enjoy. What steps would you take to connect and understand?</p>
+                        </div>
+                        <div class="scenario-card">
+                            <div class="scenario-number"><span>3</span></div>
+                            <h4 class="font-semibold mb-2 text-gray-800">Parent Concern</h4>
+                            <p class="text-sm text-gray-600">Parents express concern about the difficulty level or time commitment of an upcoming honor. How would you address their concerns collaboratively?</p>
+                        </div>
+                        <div class="scenario-card">
+                            <div class="scenario-number"><span>4</span></div>
+                            <h4 class="font-semibold mb-2 text-gray-800">New Pathfinder Integration</h4>
+                            <p class="text-sm text-gray-600">A new Pathfinder joins mid-year and is struggling to catch up on requirements and integrate socially. What support plan would you implement?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Final Call to Action -->
+            <div class="bg-gradient-to-r from-blue-800 to-blue-900 text-white p-6 rounded-lg mt-6 shadow-lg transform hover:scale-101 transition-transform duration-300">
+                <h3 class="text-2xl font-semibold mb-3 flex items-center">
+                    <i class="fas fa-hand-point-right text-yellow-300 mr-3 animate-pulse"></i>
+                    Ready to Make a Difference?
+                </h3>
+                <p class="mb-4 leading-relaxed">As counsellors, you're not just teaching skills - you're mentoring young people, helping them grow spiritually, socially, and personally. Your dedication, passion, and commitment are the heart of our Pathfinder club!</p>
+                <p class="font-medium">Let's commit to making this year exceptional as we build character and serve others together. Thank you for your service!</p>
+            </div>
+        </section>
+
+        <!-- 15. Quiz 6 -->
+        <section id="quiz-6" class="navigable-item">
+            <div class="card bg-white p-6 mb-6">
+                <h2 class="text-2xl font-bold text-blue-900 mb-4 flex items-center">
+                    <i class="fas fa-question-circle text-blue-600 mr-3"></i>
+                    Final Check: Counsellor Best Practices
+                </h2>
+                <form id="quiz-form-6" class="space-y-4">
+                    <div class="quiz-question mb-4 p-4 border rounded border-gray-200 hover:border-blue-300 transition-colors duration-200 shadow-sm">
+                        <p class="font-semibold mb-2 flex items-center">
+                            <span class="bg-blue-600 text-white rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 shadow-sm">1</span>
+                            Which of these is a key example of spiritual leadership in Pathfinders?
+                        </p>
+                        <div class="space-y-2 ml-8">
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q1" id="q6-1a" value="a" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q6-1a">Creating detailed activity schedules</label>
+                            </div>
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q1" id="q6-1b" value="b" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q6-1b">Connecting Pathfinder activities to biblical principles</label>
+                            </div>
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q1" id="q6-1c" value="c" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q6-1c">Strictly enforcing uniform policies at all times</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz-question mb-4 p-4 border rounded border-gray-200 hover:border-blue-300 transition-colors duration-200 shadow-sm">
+                        <p class="font-semibold mb-2 flex items-center">
+                            <span class="bg-blue-600 text-white rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 shadow-sm">2</span>
+                            Which best describes the recommended approach to safety in Pathfinder activities?
+                        </p>
+                        <div class="space-y-2 ml-8">
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q2" id="q6-2a" value="a" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q6-2a">Reactive - primarily addressing safety issues as they arise</label>
+                            </div>
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q2" id="q6-2b" value="b" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q6-2b">Preventative - anticipating potential hazards and taking steps to avoid safety issues</label>
+                            </div>
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q2" id="q6-2c" value="c" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q6-2c">Minimal - focusing mainly on fun and trusting Pathfinders to be careful</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add a third question -->
+                    <div class="quiz-question mb-4 p-4 border rounded border-gray-200 hover:border-blue-300 transition-colors duration-200 shadow-sm">
+                        <p class="font-semibold mb-2 flex items-center">
+                            <span class="bg-blue-600 text-white rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 shadow-sm">3</span>
+                            Active listening is a key component of effective communication. This involves:
+                        </p>
+                        <div class="space-y-2 ml-8">
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q3" id="q6-3a" value="a" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q6-3a">Waiting for your turn to speak and formulating your response.</label>
+                            </div>
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q3" id="q6-3b" value="b" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q6-3b">Giving your full attention, understanding the message, and responding thoughtfully.</label>
+                            </div>
+                            <div class="flex items-center quiz-option">
+                                <input type="radio" name="q3" id="q6-3c" value="c" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                <label for="q6-3c">Interrupting to ask clarifying questions immediately.</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <button type="submit" class="px-6 py-2 btn-primary rounded shadow-md hover:shadow-lg transition-shadow duration-300 flex items-center justify-center w-full sm:w-auto">
+                            <i class="fas fa-check-circle mr-2"></i> Submit Final Answers
+                        </button>
+                    </div>
+                </form>
+                <div id="quiz-result-6" class="mt-4 p-4 border rounded hidden"></div>
+            </div>
+        </section>
+
+        <!-- 16. Completion Section -->
+        <section id="section-10" class="navigable-item">
+            <div class="card bg-white p-6 mb-6">
+                <div class="text-center py-8">
+                    <div class="completion-badge mb-6">
+                        <i class="fas fa-award text-yellow-500"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold text-blue-900 mb-4">Workshop Completed!</h2>
+                    <p class="text-lg mb-6 text-gray-700 max-w-xl mx-auto">Thank you for completing the Pathfinder Counsellors Workshop training. You're now equipped to make a significant impact on our Pathfinders!</p>
+                    
+                    <div class="bg-blue-50 p-6 rounded-lg max-w-md mx-auto shadow-sm border border-blue-200">
+                        <h3 class="font-semibold mb-4 text-blue-800 flex items-center justify-center">
+                            <i class="fas fa-clipboard-check text-blue-600 mr-2"></i>
+                            Next Steps:
+                        </h3>
+                        <ol class="text-left list-decimal pl-8 space-y-3">
+                            <li class="text-blue-700">Return to the main group for the role assignment session</li>
+                            <li class="text-blue-700">Complete any additional paperwork for your specific role</li>
+                            <li class="text-blue-700">Connect with your fellow counsellors to plan for the first meeting</li>
+                            <li class="text-blue-700">Pray for God's guidance in your service</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white p-6 mt-8">
+        <div class="container mx-auto text-center">
+            <div class="flex items-center justify-center mb-3">
+                <i class="fas fa-compass text-yellow-300 text-xl mr-2"></i>
+                <p class="text-lg font-semibold">Pathfinder Counsellors Workshop</p>
+            </div>
+            <p class="text-sm text-blue-200">Seventh-day Adventist Church</p>
+            <p class="mt-2 italic">"Building Character, Serving Others"</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
