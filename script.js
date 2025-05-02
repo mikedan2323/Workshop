@@ -208,12 +208,12 @@ document.addEventListener('DOMContentLoaded', function() {
         Object.keys(trackerLinks).forEach(id => {
             const link = document.getElementById(id);
             if (link) {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
+                //link.addEventListener('click', function(e) {
+                  //  e.preventDefault();
                     // In a real implementation, this would redirect to the actual tracker
                     // For demo purposes, we'll show an alert
-                    alert(`This would link to the ${id.split('-')[0]} tracker. In the final version, replace with your actual Google Sheet URL.`);
-                });
+                   // alert(`This would link to the ${id.split('-')[0]} tracker. In the final version, replace with your actual Google Sheet URL.`);
+               // });
             }
         });
     }
